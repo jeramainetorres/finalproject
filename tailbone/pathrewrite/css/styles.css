@@ -1,0 +1,13 @@
+body {
+    padding-top: 100px;
+}
+
+img {
+	width:50px;
+	padding: -2px;
+	vertical-align:middle;
+}
+
+.hidden {
+    display: none;
+}
