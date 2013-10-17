@@ -83,7 +83,7 @@ $(function() {
             var $listTemplate = getTemplate('tpl-thesis-list');
             $('.app-content').html($listTemplate);
         },
-        showThesis: function(thesis) {
+        showView: function(thesis) {
             var self = this;
             var $viewTemplate = getTemplate('tpl-thesis-view-item', thesis);
             $('.app-content').html($viewTemplate);
@@ -228,7 +228,7 @@ $(function() {
        onView: function(id) {
            console.log('thesis id', id);
             app.getThesisByID(id, function(item) {
-            app.showThesis(item);
+            app.showView(item);
             FB.XFBML.parse();
             });
        },
